@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
+@import 'slideshow';
 @import 'home';
 @import 'navbar';
 @import 'services';
@@ -31,4 +31,12 @@ html {
     margin: auto;
     margin-top: 8px;
     margin-bottom: 5px;
+}
+footer{
+    background: rgb(27, 26, 26);
+    color: #fff8;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: capitalize
+    ;
 }
