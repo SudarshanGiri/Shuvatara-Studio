@@ -1,0 +1,32 @@
+#framing{
+    background: #555151;
+    .title{
+        color: #fff;
+    }
+    .wrapper{
+        padding:50px;
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            width: 50%;
+            overflow: hidden;
+        }
+        div:nth-child(1){
+            border: 10px solid #fff;
+        }
+        .content{
+            padding:0 50px;
+            font-size: 30px;
+            color: #fff;
+            text-align: left;
+           
+        }
+    }
+}
+@media(max-width:991px){
+    #framing{
+        .wrapper div{
+            width: 100%;
+        }
+    }
+}

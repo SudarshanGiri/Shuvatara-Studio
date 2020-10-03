@@ -3,6 +3,10 @@
 @import 'home';
 @import 'navbar';
 @import 'services';
+@import 'photography';
+@import 'videography';
+@import 'framing';
+@import 'contact';
 
 
 *{
@@ -13,30 +17,31 @@
 html {
     scroll-behavior: smooth;
 }
-  
+
 .title{
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     text-align: center;
-    padding: 10px 0;
+    padding: 70px 0;
     position: relative;
-}
-.title::after{
-    content: '';
-    background: #0084ff;
-    width: 100px;
-    height: 3px;
-    border-radius: 10px;
-    display: block;
-    margin: auto;
-    margin-top: 8px;
-    margin-bottom: 5px;
+    color: orangered;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 1;
+    letter-spacing: 2px;
 }
 footer{
-    background: rgb(27, 26, 26);
+    background: rgb(34, 33, 33);
     color: #fff8;
-    padding: 20px 0;
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    text-transform: capitalize
-    ;
+    text-transform: capitalize;
+    p{
+        margin: 0 !important;
+
+    }
+    
 }

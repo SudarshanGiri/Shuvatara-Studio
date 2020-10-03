@@ -1,22 +1,26 @@
-//navbar burger click event
-document.querySelector('.burger').addEventListener('click',function(){
-    document.querySelector('.nav-links').classList.toggle('nav-links-show');
-    document.querySelector('.burger').classList.toggle('burger-animate');
-})
-//end navbar
-/*slider start*/
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+//onscroll change the background of nav
+/*window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var nav=document.querySelector("nav");
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    nav.style.background="#000";
+    nav.style.borderBottom="1px solid #646464";
+    } 
+    else{
+        nav.style.background="transparent";
+        nav.style.borderBottom="none";
+
+
+
+
+    }
 }
-/*end slider*/ 
+
+*/
+
+//end navbar
+
+
+

@@ -1,0 +1,20 @@
+.title{
+    i{
+        font-size: 60px;
+        margin-left: 70px;
+        position: absolute;
+    }
+}
+.video-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+
+    iframe{
+        margin: 5px;
+    }
+    iframe:nth-child(3), iframe:nth-child(4),:nth-child(5){
+        width: 350px;
+    }
+}
