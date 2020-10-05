@@ -22,5 +22,20 @@ function scrollFunction() {
 
 //end navbar
 
+$(document).ready(function() {
+
+    $(document).on("scroll", function(){
+ 
+        if ($(document).scrollTop() > 80){
+            $(".primary-nav").addClass("shrink");
+            $(".navbar-brand img").addClass("shrink")
+        } else {
+            $(".primary-nav").removeClass("shrink");
+            $(".navbar-brand img").removeClass("shrink");
+        }
+    
+    });
+    
+  });
 
 

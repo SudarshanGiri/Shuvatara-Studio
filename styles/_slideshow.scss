@@ -24,6 +24,11 @@
   margin: 10px;
   background-color: orangered;
 }
+ol.carousel-indicators {
+  width: fit-content;
+  background: #0008;
+  margin: auto;
+}
 @media(min-width:1370px){
   .carousel-inner{
     width:100%;

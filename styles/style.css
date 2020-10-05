@@ -28,6 +28,14 @@
   background-color: orangered;
 }
 
+ol.carousel-indicators {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #0008;
+  margin: auto;
+}
+
 @media (min-width: 1370px) {
   .carousel-inner {
     width: 100%;
@@ -37,15 +45,15 @@
 
 #home {
   position: relative;
-  margin-top: -74px;
-  padding-top: 74px;
+  margin-top: -90px;
+  padding-top: 90px;
 }
 
 .studio-text {
   font-size: 50px;
   position: absolute;
   color: #fff;
-  top: 74px;
+  top: 90px;
   right: 0%;
   z-index: 1;
   background: orangered;
@@ -83,12 +91,51 @@
   }
 }
 
+li.nav-item a {
+  font-weight: bold;
+}
+
+.primary-nav {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+
+.shrink {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 70px !important;
+}
+
+.shrink a {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+nav {
+  height: 90px;
+}
+
+.navbar-collapse.show {
+  background: #fff;
+}
+
 .navbar-brand {
   color: orangered !important;
   font-weight: bold;
   font-size: 2rem;
   text-transform: uppercase;
   margin-left: 50px;
+}
+
+.navbar-brand img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
 }
 
 .nav-item {
