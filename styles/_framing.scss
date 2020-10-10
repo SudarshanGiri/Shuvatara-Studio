@@ -11,8 +11,13 @@
             width: 50%;
             overflow: hidden;
         }
+        /*<img src="https://www.caloundraframingfactory.com.au/wp-content/uploads/2018/01/3-key-principles-picture-framing.jpg" alt="">*/
         div:nth-child(1){
             border: 10px solid #fff;
+            background:url(https://www.caloundraframingfactory.com.au/wp-content/uploads/2018/01/3-key-principles-picture-framing.jpg);
+            background-position: center;
+            height: 400px;
+            background-size: cover;
         }
         .content{
             padding:0 50px;
