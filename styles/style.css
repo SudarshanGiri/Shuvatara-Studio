@@ -56,7 +56,7 @@ ol.carousel-indicators {
   top: 90px;
   right: 0%;
   z-index: 1;
-  background: orangered;
+  background: #c70000;
   text-shadow: 0 5px 5px #000;
   padding: 0 50px;
 }
@@ -66,7 +66,7 @@ ol.carousel-indicators {
   bottom: 50px;
   background: #0005;
   left: 50px;
-  z-index: 1;
+  z-index: 999999999;
 }
 
 .social-icons-wrapper a {
@@ -83,6 +83,10 @@ ol.carousel-indicators {
   height: 50px;
   font-size: 30px;
   margin: 20px;
+}
+
+.social-icons-wrapper a i:hover {
+  background: #c70000 !important;
 }
 
 @media (max-width: 600px) {
@@ -146,11 +150,11 @@ nav {
 }
 
 .nav-item a:hover {
-  color: orangered !important;
+  color: #c70000 !important;
 }
 
 .nav-item a.active {
-  border-bottom: 3px solid orangered;
+  border-bottom: 3px solid #c70000;
 }
 
 body {
@@ -228,7 +232,7 @@ div {
 .card-title {
   font-size: 25px;
   text-transform: capitalize;
-  background: orangered;
+  background: #c70000;
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -354,34 +358,7 @@ section#photography .photos_wrapper div:nth-child(1) img {
 #contact {
   background: #F5F5F7;
   width: 100%;
-  padding-bottom: 50px;
-}
-
-#contact .email, #contact .phone {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 20px 0;
-}
-
-#contact .social-icons {
-  text-align: center;
-  padding: 20px 0;
-}
-
-#contact .social-icons div {
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-#contact .social-icons i {
-  font-size: 2rem;
-  color: #fff;
-  width: 50px;
-  line-height: 50px;
-  height: 50px;
-  margin: 0 50px;
-  background: #181717;
+  padding-bottom: 0px;
 }
 
 #contact .contact-wrapper {
@@ -399,6 +376,107 @@ section#photography .photos_wrapper div:nth-child(1) img {
   width: 40%;
 }
 
+#contact .contact-wrapper .form-container {
+  padding: 20px;
+  width: 35%;
+  border: 2px solid #555555;
+}
+
+#contact .contact-wrapper .form-container .form-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact .contact-wrapper .form-container form textarea#content {
+  width: 100%;
+  height: 100px;
+}
+
+#contact .contact-wrapper .contact-details {
+  margin-top: 20px;
+  background: #C20E12;
+  color: #fff;
+  width: 100%;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+#contact .contact-wrapper .contact-details .left {
+  width: 40%;
+  min-width: 400px;
+}
+
+#contact .contact-wrapper .contact-details .left .brand-image {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+#contact .contact-wrapper .contact-details .right {
+  width: 40%;
+  min-width: 400px;
+}
+
+#contact .contact-wrapper .contact-details .right .email, #contact .contact-wrapper .contact-details .right .phone {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 5px 0;
+}
+
+#contact .contact-wrapper .contact-details .right .brand-image {
+  min-width: 400px;
+}
+
+#contact .contact-wrapper .contact-details .right .social-icons {
+  text-align: center;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .contact-wrapper .contact-details .right .social-icons div {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact-wrapper .contact-details .right .social-icons i {
+  font-size: 35px;
+  color: black;
+  width: 50px;
+  line-height: 50px;
+  height: 50px;
+  margin: 0 20px;
+  border-radius: 100%;
+  background: white;
+}
+
+#contact .contact-wrapper .contact-details .right .social-icons i:hover {
+  background: #09c0f8;
+}
+
 @media (max-width: 991px) {
   #contact .contact-wrapper {
     display: -webkit-box;
@@ -412,6 +490,10 @@ section#photography .photos_wrapper div:nth-child(1) img {
   }
   #contact .contact-wrapper iframe {
     width: 90%;
+  }
+  #contact .contact-wrapper .form-container {
+    width: 70% !important;
+    margin-top: 30px;
   }
 }
 
@@ -431,7 +513,7 @@ html {
   text-align: center;
   padding: 70px 0;
   position: relative;
-  color: orangered;
+  color: #c70000;
   text-transform: uppercase;
   font-weight: bold;
   z-index: 1;
@@ -439,7 +521,7 @@ html {
 }
 
 footer {
-  background: #222121;
+  background: #8f0103;
   color: #fff8;
   display: -webkit-box;
   display: -ms-flexbox;

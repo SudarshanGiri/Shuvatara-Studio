@@ -12,7 +12,7 @@
     top: 90px;
     right: 0%;
     z-index: 1;
-    background: orangered;
+    background: #c70000;
     text-shadow: 0 5px 5px #000;
     padding: 0 50px;
 }
@@ -21,7 +21,8 @@
     bottom: 50px;
     background: #0005;
     left: 50px;
-    z-index: 1;
+    z-index: 999999999;
+
     a{
         color: #fff;
         i{
@@ -34,6 +35,11 @@
             height: 50px;
             font-size: 30px;
             margin: 20px;
+
+        }
+        i:hover{
+            background: #c70000 !important;
+
         }
     }
 
