@@ -379,7 +379,10 @@ section#photography .photos_wrapper div:nth-child(1) img {
 #contact .contact-wrapper .form-container {
   padding: 20px;
   width: 35%;
-  border: 2px solid #555555;
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px #dbcccc;
+          box-shadow: 0 0 8px #dbcccc;
+  border-radius: 12px;
 }
 
 #contact .contact-wrapper .form-container .form-title {
@@ -521,7 +524,7 @@ html {
 }
 
 footer {
-  background: #8f0103;
+  background: #b30004;
   color: #fff8;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,10 +1,34 @@
+<?php
+if(isset($_POST['submit']) && !empty($_POST)) {
+
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message=$_POST['message'];
+    $mailBody = "Here is the user contact details:\n";
+    $mailBody .= "User Name: " . $firstname . " " . $lastname .  "\n";
+    $mailBody .= "User Email: " . $email . "\n";
+    $mailBody .= "Phone: " . $phone . "\n";
+    $mailBody .= "Message: " . $message . "\n";
+    $recipient = "shuvataraphoto@gmail.com";
+    $subject = "Contact Form";
+    $mailheader = "From: $email \r\n";
+    if(mail($recipient, $subject, $mailBody, $mailheader)){
+      ?>
+      <script> alert("Thank you for contacting us. We will connect with you soon. ")</script>
+      <?php
+    }
+
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudarshan Giri</title>
+    <title>Shuvatara Studio</title>
     <link rel="shortcut icon" type="image" href="./images/logo.png">
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -209,21 +233,29 @@
                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
                 <div class="form-container">
-                  <form action="" method="POST" autocomplete="off">
-                    <div class="form-title">Leave your message</div>
+                  <form  action="" method="POST" autocomplete="off">
+                    <div class="form-title">CONTACT US</div>
+                    <fieldset class='form-group'>
+                      <label for="firstname">First Name</label>
+                      <input  required type="text" name="firstname" class='form-control' id='firstname'>
+                    </fieldset>
+                    <fieldset class='form-group'>
+                      <label for="lastname">Last Name</label>
+                      <input required type="text" name="lastname" class='form-control' id='lastname'>
+                    </fieldset>
                     <fieldset class='form-group'>
                         <label for="email">Email Adress</label>
-                        <input type="email" name="email" class='form-control' id='email'>
+                        <input required type="email" name="email" class='form-control' id='email'>
                     </fieldset>
                     <fieldset class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" class="form-control" id="subject" name="subject">
+                        <label for="phone">Phone Number</label>
+                        <input required type="number" class="form-control" id="phone" name="phone">
                         
         
                     </fieldset>
                     <fieldset class="form-group">
-                        <label for="content">Message</label>
-                        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                        <label for="message">Message</label>
+                        <textarea  name="message" id="content" cols="30" rows="10"></textarea>
                     </fieldset>
                     <button type="submit" id="submit" name='submit' class="btn btn-primary">Submit</button>
                   </form>
