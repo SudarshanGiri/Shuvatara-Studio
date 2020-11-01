@@ -50,23 +50,23 @@ ol.carousel-indicators {
 }
 
 .studio-text {
-  font-size: 50px;
+  font-size: 30px;
   position: absolute;
   color: #fff;
   top: 90px;
+  font-weight: normal;
   right: 0%;
   z-index: 1;
   background: #c70000;
-  text-shadow: 0 5px 5px #000;
   padding: 0 50px;
 }
 
 .social-icons-wrapper {
   position: absolute;
   bottom: 50px;
-  background: #0005;
+  background: #c5c5c555;
   left: 50px;
-  z-index: 999999999;
+  z-index: 9;
 }
 
 .social-icons-wrapper a {
@@ -104,7 +104,7 @@ ol.carousel-indicators {
 }
 
 li.nav-item a {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .primary-nav {
@@ -213,6 +213,10 @@ div {
   padding-bottom: 50px;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .services-items-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,6 +244,38 @@ div {
 
 .card-img-top {
   height: 190px;
+}
+
+.cup-print-showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #eee;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.cup-print-showcase p {
+  padding: 10px;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  background: #eee;
+  font-weight: 500;
+  color: #000;
+}
+
+.cup-print-showcase img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
 }
 
 section#photography {
@@ -500,6 +536,16 @@ section#photography .photos_wrapper div:nth-child(1) img {
   }
 }
 
+.category {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -511,7 +557,7 @@ html {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 30px;
   text-transform: capitalize;
   text-align: center;
   padding: 70px 0;
