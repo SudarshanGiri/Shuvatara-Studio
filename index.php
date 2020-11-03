@@ -82,14 +82,14 @@ if(isset($_POST['submit']) && !empty($_POST)) {
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="./images/services/videography.jpeg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">videography</h5>
+                  <a href="#videography"><h5 class="card-title">videography</h5></a>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>    
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="./images/services/framing.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Photo Framing</h5>
+                  <a href="#framing"><h5 class="card-title">Photo Framing</h5></a>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                
                 </div>
@@ -105,16 +105,49 @@ if(isset($_POST['submit']) && !empty($_POST)) {
             
                 
         </div>
-        <div class="cup-print-showcase">
-          <p>Mug Printing </p>
-          <img src="./images/cup-print/1.jpg" alt="">
-          <img src="./images/cup-print/2.jpg" alt="">
-          <img src="./images/cup-print/3.jpg" alt="">
-
-
-
-        
-        </div>
+       <div class="printing-wrapper ">
+       <div class="photo-enlargement-showcase">
+            <p>Photo printing and Enlargement</p>
+            <img class="wide" src="./images/services/content_enlargement.png" alt="">
+          
+          </div>
+          <div class="mug-print-showcase">
+            <p>Cup/Mug Print</p>
+            <img src="./images/cup-print/1.jpg" alt="">
+            <img src="./images/cup-print/2.jpg" alt="">
+            <img src="./images/cup-print/3.jpg" alt="">
+          
+          </div>
+          
+          <div class="mug-print-showcase">
+            <p>Tshirt Print</p>
+            <img src="./images/services/tshirt-print/personalized-tshirt.jpg" alt="">
+            <img src="./images/services/tshirt-print/Tshirt-printing.jpg" alt="">
+            <img src="./images/services/tshirt-print/cheap-white-t-shirt-printing-266x300.jpg" alt="">
+          
+          </div>
+          <div class="cusion-print-showcase">
+            <p>Cusion Print</p>
+            <img src="./images/services/cusion-print/111-500x500.jpg" alt="">
+            <img src="./images/services/cusion-print/sublimation-pillow-with-cushion-500x500.jpg" alt="">
+            <img src="./images/services/cusion-print/se.jpg">
+          
+          </div>
+          <div class="cusion-print-showcase">
+            <p>PVC/ID card Print</p>
+            <img src="./images/services/id-card-print/1.png" alt="">
+            <img src="./images/services/id-card-print/3684340673948fd595890e7cd3a5fd01.jpg" alt="">
+            <img src="./images/services/id-card-print/design-and-print-pvc-and-rfid-cards.jpg" alt="">
+          
+          </div>
+          <div class="marble-print-showcase">
+            <p>Marble Print</p>
+            <img src="./images/services/marble-printing.jpg" alt="">
+           
+          
+          </div>
+       
+       </div>
 
     </section>
     <section id="photography">
